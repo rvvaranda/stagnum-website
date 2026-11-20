@@ -1,0 +1,24 @@
+# Stagnum Instalações e Representação
+
+> Site institucional em português do Brasil sobre serviços de instalações para piscinas, saunas, sistemas hidráulicos e equipamentos relacionados. Este endereço é um protótipo de redesign da Stagnum, com informações extraídas de páginas públicas da empresa.
+
+## Conteúdo principal
+
+- [Página inicial](https://rvvaranda.github.io/stagnum-website/): apresentação da Stagnum, serviços e destaques de obras.
+- [Serviços](https://rvvaranda.github.io/stagnum-website/servicos.html): filtração e tratamento de piscinas, aquecimento, iluminação, saunas, instalações prediais, projetos, impermeabilização e manutenção.
+- [Obras](https://rvvaranda.github.io/stagnum-website/obras.html): relação de obras finalizadas e obras apresentadas como em andamento no portfólio publicado.
+- [Produtos](https://rvvaranda.github.io/stagnum-website/produtos.html): tipos de equipamentos utilizados e fornecidos, incluindo bombas, filtros, aquecedores e geradores.
+
+## Contato
+
+Telefone e WhatsApp: +55 21 99854-3141.
+
+## Fontes oficiais da empresa
+
+- https://stagnuminstalacoes.com.br/
+- https://stagnuminstalacoes.com.br/obras-finalizadas/
+- https://stagnuminstalacoes.com.br/obras-em-andamento/
+
+## Observações
+
+As imagens de ambientes são ilustrativas, não fotografias comprovadas de obras. Não há preços, avaliações numéricas, datas de conclusão ou garantias declaradas neste protótipo. Confirme escopo e disponibilidade diretamente com a empresa.
