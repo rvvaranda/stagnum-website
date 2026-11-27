@@ -1,0 +1,15 @@
+/* Identidade original e rodapé institucional compartilhado */
+.header,.site-header{min-height:108px}
+.brand-logo,.site-header .wrap>a>img{width:96px!important;height:96px!important;max-height:none!important;object-fit:contain;filter:none!important}
+.footer .brand-logo,.site-footer .wrap>a>img{width:112px!important;height:112px!important;max-height:none!important;object-fit:contain;filter:none!important;opacity:1}
+.footer,.site-footer{background:#092b3a;color:#d9e7eb;padding:64px 0 28px}
+.footer .wrap,.site-footer .wrap{display:grid;grid-template-columns:minmax(150px,.8fr) repeat(3,minmax(170px,1fr));gap:32px;align-items:start}
+.footer .footer-column,.site-footer .footer-column{min-width:0}
+.footer .footer-column h2,.site-footer .footer-column h2{font:700 12px/1.4 'DM Sans',sans-serif;letter-spacing:.13em;text-transform:uppercase;color:#7bcce5;margin:4px 0 18px}
+.footer .footer-column p,.site-footer .footer-column p{font:400 13px/1.8 'DM Sans',sans-serif;color:#d9e7eb;margin:0 0 8px}
+.footer .footer-column a,.site-footer .footer-column a{color:#fff;text-decoration:none}
+.footer .footer-column a:hover,.site-footer .footer-column a:hover{text-decoration:underline;text-underline-offset:3px}
+.footer .footer-end,.site-footer .footer-end{grid-column:1/-1;display:flex;gap:20px;justify-content:space-between;border-top:1px solid #ffffff35;padding-top:22px;margin-top:12px}
+.footer .footer-end p,.site-footer .footer-end p{font-size:11px;color:#9cb9c4;margin:0}
+@media(max-width:920px){.footer .wrap,.site-footer .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.header,.site-header{min-height:80px}.brand-logo,.site-header .wrap>a>img{width:70px!important;height:70px!important}.footer,.site-footer{padding:48px 0 24px}.footer .wrap,.site-footer .wrap{grid-template-columns:1fr 1fr;gap:26px 18px}.footer .footer-column:first-of-type,.site-footer .footer-column:first-of-type{grid-column:span 2}.footer .footer-end,.site-footer .footer-end{display:block}.footer .footer-end a,.site-footer .footer-end a{display:inline-block;margin-top:12px}}
