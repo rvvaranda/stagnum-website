@@ -20,6 +20,24 @@ Para conhecer a relação completa: https://rvvaranda.github.io/stagnum-website/
 
 A galeria de fotografias fornecidas pela Stagnum inclui AFA (SP), Easy Botafogo, Living Wish Norte, Mudrá, Maayan, Majestic, Living Parque Jardim, Fazenda, Policlínica Naval, Campinas, Parque São Gonçalo, Península Fit, Residência, Vivaz Andaraí, Vivaz Del Castilho e Le Monde. A identificação dos registros segue o documento FOTOS SITE-2027 enviado pelo cliente.
 
+### Obras e serviços detalhados pelo cliente
+
+- AFA Pirassununga, SP: sistema de filtração e climatização de piscina de grande porte.
+- Easy Botafogo, RJ: piscina e sauna a vapor do empreendimento.
+- Living Parque Jardim, Curicica, RJ: piscina do empreendimento.
+- Parque RJ: filtração e efeito hidráulico da cascata.
+- Majestic: mudança do sistema de climatização da piscina, de gás para bomba de calor.
+
+### Obras finalizadas informadas
+
+Península Fit (iluminação); Bodytech Iguatemi Campinas (filtração, iluminação e climatização); Majestic (iluminação); Millenio (climatização); Living Wish Norte (piscina); Residência na Barra (filtração, iluminação e hidromassagem); Residência na Ilha do Governador (revestimento em vinil); New Time Motel (filtração e climatização); Policlínica Naval (geração de água quente e piscina de hidroterapia).
+
+### Obras em andamento informadas
+
+Only By Living (piscina e sauna a vapor); Blue Star Motel (filtração e climatização); Stillo Barra Residencial, Villa Santé, Gentileza Beon Porto Residencial, Residencial Laranjeiras e Conquista Max Norte (piscinas); Rio Hotel Residencial (climatização); Residência em Paraty (piscina).
+
+As listas acima foram atualizadas conforme o PDF de orientações enviado pelo cliente.
+
 Galeria e obras: https://rvvaranda.github.io/stagnum-website/obras.html
 
 ## Endereço
