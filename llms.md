@@ -33,7 +33,7 @@ A galeria de fotografias fornecidas pela Stagnum inclui AFA (SP), Easy Botafogo,
 - AFA Pirassununga, SP: sistema de filtração e climatização de piscina de grande porte.
 - Easy Botafogo, RJ: piscina e sauna a vapor do empreendimento.
 - Living Parque Jardim, Curicica, RJ: piscina do empreendimento.
-- Parque RJ: filtração e efeito hidráulico da cascata.
+- Parque São Gonçalo - RJ: filtração e efeito hidráulico da cascata.
 - Majestic: mudança do sistema de climatização da piscina, de gás para bomba de calor.
 
 ### Obras finalizadas informadas
