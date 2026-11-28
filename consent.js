@@ -1,10 +1,11 @@
-/* Stagnum · consentimento e preparação para Google Consent Mode v2 / GTM.
- * Nenhum container de tags é carregado aqui. A identificação aleatória só é criada
+/* Stagnum · consentimento e Google Consent Mode v2 / GTM.
+ * O contêiner GTM só carrega após consentimento opcional. O ID aleatório só é criado
  * após consentimento de analytics; não há fingerprinting de características do dispositivo.
  */
 (() => {
   'use strict';
   const VERSION = 1;
+  const GTM_ID = 'GTM-NCB7TT8T';
   const CONSENT_COOKIE = 'stagnum_consent';
   const VISITOR_COOKIE = 'stagnum_visitor_id';
   const MAX_AGE = 60 * 60 * 24 * 180;
@@ -39,6 +40,17 @@
   });
   if (existing) window.gtag('consent', 'update', consentState(existing));
 
+  let gtmLoaded = false;
+  function loadGTM(current) {
+    if (gtmLoaded || !(current?.analytics || current?.marketing)) return;
+    gtmLoaded = true;
+    window.dataLayer.push({ 'gtm.start': Date.now(), event: 'gtm.js' });
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = `https://www.googletagmanager.com/gtm.js?id=${GTM_ID}`;
+    document.head.append(script);
+  }
+
   function visitorId() {
     const prior = getCookie(VISITOR_COOKIE);
     if (prior) return decodeURIComponent(prior);
@@ -56,6 +68,7 @@
   if (existing) {
     const id = syncVisitor(existing);
     if (id) window.dataLayer.push({ event: 'stagnum_visitor_ready', stagnum_visitor_id: id });
+    loadGTM(existing);
   }
 
   function save(analytics, marketing) {
@@ -65,6 +78,7 @@
     window.gtag('consent', 'update', consentState(consent));
     window.dataLayer.push({ event: 'stagnum_consent_updated', consent_analytics: consent.analytics, consent_marketing: consent.marketing });
     if (id) window.dataLayer.push({ event: 'stagnum_visitor_ready', stagnum_visitor_id: id });
+    loadGTM(consent);
     // Integrações futuras podem ler window.StagnumPrivacy.getVisitorId() depois do opt-in.
     window.dispatchEvent(new CustomEvent('stagnum:consent', { detail: { analytics: consent.analytics, marketing: consent.marketing, hasVisitorId: !!id } }));
     banner.hidden = true;
@@ -87,7 +101,7 @@
     banner = document.createElement('aside');
     banner.id = 'stagnum-cookie-banner'; banner.className = 'stagnum-cookie-banner';
     banner.setAttribute('aria-label', 'Preferências de privacidade');
-    banner.innerHTML = `<div class="stagnum-cookie-copy"><strong>Privacidade e cookies</strong><p>Utilizamos cookies necessários para lembrar suas escolhas. Com sua permissão, poderemos usar analytics e ferramentas de marketing no futuro. Nada disso está ativo agora.</p><a href="privacidade.html">Saiba como tratamos seus dados</a></div><div class="stagnum-cookie-actions"><button type="button" data-consent="reject">Rejeitar opcionais</button><button type="button" data-consent="settings">Personalizar</button><button type="button" class="stagnum-cookie-primary" data-consent="accept">Aceitar todos</button></div>`;
+    banner.innerHTML = `<div class="stagnum-cookie-copy"><strong>Privacidade e cookies</strong><p>Usamos cookies necessários para lembrar suas escolhas. Se autorizar estatísticas ou marketing, poderemos carregar ferramentas de mensuração através do Google Tag Manager.</p><a href="privacidade.html">Saiba como tratamos seus dados</a></div><div class="stagnum-cookie-actions"><button type="button" data-consent="reject">Rejeitar opcionais</button><button type="button" data-consent="settings">Personalizar</button><button type="button" class="stagnum-cookie-primary" data-consent="accept">Aceitar todos</button></div>`;
 
     modal = document.createElement('div');
     modal.id = 'stagnum-cookie-modal'; modal.className = 'stagnum-cookie-modal'; modal.hidden = true;
@@ -110,6 +124,18 @@
       link.addEventListener('click', openPreferences);
       foot.append(link);
     }
+
+    // Eventos próprios aguardam permissão de analytics; não são enviados por si só.
+    if (parseConsent()?.analytics && /\/(servicos|filtracao-piscinas|aquecimento-piscinas|instalacao-saunas)\.html$/.test(location.pathname)) {
+      window.dataLayer.push({ event: 'view_service', page_path: location.pathname });
+    }
+    document.addEventListener('click', event => {
+      if (!parseConsent()?.analytics) return;
+      const whatsapp = event.target.closest?.('a[href*="wa.me/5521998543141"]');
+      if (whatsapp) window.dataLayer.push({ event: 'click_whatsapp', page_path: location.pathname });
+      const dot = event.target.closest?.('.photo-dot');
+      if (dot) window.dataLayer.push({ event: 'gallery_interaction', page_path: location.pathname, photo_label: dot.getAttribute('aria-label') });
+    });
   }
   window.StagnumPrivacy = Object.freeze({
     getConsent: () => parseConsent(),
