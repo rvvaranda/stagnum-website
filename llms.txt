@@ -6,6 +6,9 @@
 
 - [Início](https://rvvaranda.github.io/stagnum-website/): apresentação institucional, serviços e obras em destaque.
 - [Serviços](https://rvvaranda.github.io/stagnum-website/servicos.html): filtração e tratamento de piscinas, aquecimento, iluminação, saunas, instalações prediais, impermeabilização, projetos e manutenção.
+- [Filtração e tratamento de piscinas](https://rvvaranda.github.io/stagnum-website/filtracao-piscinas.html): sistemas de circulação, filtração, tratamento e exemplos de obras.
+- [Aquecimento e climatização de piscinas](https://rvvaranda.github.io/stagnum-website/aquecimento-piscinas.html): sistemas térmicos, bombas de calor e referência ao Majestic.
+- [Instalação de saunas secas e a vapor](https://rvvaranda.github.io/stagnum-website/instalacao-saunas.html): serviços para saunas e referências do portfólio.
 - [Obras](https://rvvaranda.github.io/stagnum-website/obras.html): portfólio com fotografias do acervo fornecido pela Stagnum e relação de obras publicadas.
 - [Produtos](https://rvvaranda.github.io/stagnum-website/produtos.html): equipamentos para piscinas, sistemas de água, aquecimento e saunas.
 - [Informações institucionais completas](https://rvvaranda.github.io/stagnum-website/llms.md): resumo em Markdown dos serviços, identificação e contatos.

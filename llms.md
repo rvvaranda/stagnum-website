@@ -16,6 +16,14 @@ A Stagnum Instalações e Representação atua com instalações, equipamentos e
 
 Para conhecer a relação completa: https://rvvaranda.github.io/stagnum-website/servicos.html
 
+### Serviços explicados em páginas próprias
+
+- Filtração e tratamento de água de piscinas: https://rvvaranda.github.io/stagnum-website/filtracao-piscinas.html
+- Aquecimento e climatização de piscinas: https://rvvaranda.github.io/stagnum-website/aquecimento-piscinas.html
+- Instalação de saunas secas e a vapor: https://rvvaranda.github.io/stagnum-website/instalacao-saunas.html
+
+As páginas descrevem o escopo informado, exemplos do portfólio e formas de contato; não são declarações de especificações, economias ou resultados não comprovados.
+
 ## Portfólio de obras
 
 A galeria de fotografias fornecidas pela Stagnum inclui AFA (SP), Easy Botafogo, Living Wish Norte, Mudrá, Maayan, Majestic, Living Parque Jardim, Fazenda, Policlínica Naval, Campinas, Parque São Gonçalo, Península Fit, Residência, Vivaz Andaraí, Vivaz Del Castilho e Le Monde. A identificação dos registros segue o documento FOTOS SITE-2027 enviado pelo cliente.
@@ -58,8 +66,8 @@ Estrada Coronel Pedro Correia, 740, salas 517 e 1013 — Jacarepaguá, Rio de Ja
 ## Endereços digitais
 
 - Site institucional: https://stagnuminstalacoes.com.br/
-- Protótipo GitHub Pages: https://rvvaranda.github.io/stagnum-website/
+- Versão temporária em validação (GitHub Pages): https://rvvaranda.github.io/stagnum-website/
 
 ## Observações sobre os dados
 
-Dados cadastrais fornecidos pelo cliente e não verificados independentemente. Não inferir datas ou características de execução apenas a partir das fotos. O conteúdo deste endereço é um projeto de redesign e não substitui a confirmação direta com a empresa.
+Dados cadastrais fornecidos pelo cliente e não verificados independentemente. Não inferir datas ou características de execução apenas a partir das fotos. A hospedagem atual é temporária, para validação do cliente; o domínio corporativo definitivo poderá ser configurado posteriormente.
