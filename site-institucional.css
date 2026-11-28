@@ -21,3 +21,7 @@
 @media(hover:hover){.image-composition:hover img{filter:saturate(1.06) contrast(1.05) brightness(1.04)}}
 @media(max-width:650px){.image-composition::before{left:22px}}
 @media(prefers-reduced-motion:reduce){.image-composition img{transition:none}}
+
+/* Ícones dos títulos do rodapé */
+.footer .footer-column h2,.site-footer .footer-column h2{display:flex;align-items:center;gap:9px}
+.footer .footer-column h2 svg,.site-footer .footer-column h2 svg{width:18px;height:18px;flex:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;fill:none}
