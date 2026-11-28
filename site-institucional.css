@@ -13,3 +13,11 @@
 .footer .footer-end p,.site-footer .footer-end p{font-size:11px;color:#9cb9c4;margin:0}
 @media(max-width:920px){.footer .wrap,.site-footer .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:650px){.header,.site-header{min-height:108px}.brand-logo,.site-header .wrap>a>img{width:94px!important;height:94px!important}.footer,.site-footer{padding:40px 0 24px}.footer .wrap,.site-footer .wrap{grid-template-columns:1fr 1fr;gap:22px 18px}.footer .footer-column:first-of-type,.site-footer .footer-column:first-of-type{grid-column:span 2}.footer .footer-end,.site-footer .footer-end{display:block}.footer .footer-end a,.site-footer .footer-end a{display:inline-block;margin-top:12px}}
+
+/* Fotografia da seção Sobre: tratamento azul discreto, sem cobrir a cascata */
+.image-composition img{filter:saturate(.93) contrast(1.08) brightness(.96);transition:filter .6s ease}
+.image-composition::before{content:"";position:absolute;z-index:1;inset:0 0 45px 40px;background:linear-gradient(155deg,rgba(10,60,78,.10),rgba(16,133,170,.17) 70%,rgba(5,45,68,.10));pointer-events:none}
+.image-composition .image-note{z-index:2}
+@media(hover:hover){.image-composition:hover img{filter:saturate(1.06) contrast(1.05) brightness(1.04)}}
+@media(max-width:650px){.image-composition::before{left:22px}}
+@media(prefers-reduced-motion:reduce){.image-composition img{transition:none}}
